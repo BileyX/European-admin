@@ -8,6 +8,7 @@ import Orders from "./Pages/Orders";
 import Login from "./Components/Login";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ActiveUsers from "./Pages/ActiveUsers";
 
 export const BASE_URL = 'https://furnitureapi-ykrq.onrender.com';
 
@@ -34,6 +35,7 @@ const App = () => {
                 <Route path="/add" element={<Add token={token}/>} />
                 <Route path="/list" element={<List token={token}/>} />
                 <Route path="/orders" element={<Orders token={token}/>} />
+                <Route path="/active-users" element={<ActiveUsers token={token} />} />
               </Routes>
             </div>
           </div>
